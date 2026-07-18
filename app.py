@@ -1,9 +1,11 @@
 import os
+from dotenv import load_dotenv
 from flask import Flask, request, jsonify, render_template
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain.schema import HumanMessage, AIMessage
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain_core.messages import HumanMessage, AIMessage
 
+load_dotenv()
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
 FAQ_CONTEXT = """
