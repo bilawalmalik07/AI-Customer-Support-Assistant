@@ -11,7 +11,7 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 FAQ_CONTEXT = """
 Company: BrightGear Electronics
 Support policies:
-- Returns accepted within 30 days of purchase with receipt.
+- Returns accepted within 30 days of purchase with receipt.  
 - Standard shipping takes 5-7 business days; express takes 1-2 business days.
 - Warranty: 1 year manufacturer warranty on all products.
 - Refunds are processed within 5-10 business days after the returned item is received.
